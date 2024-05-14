@@ -16,7 +16,14 @@ class NewsModel : Codable {
     var url :String?
     var publishedAt :String?
 
-    
+    init(author: String?, title: String?, description: String?, imageUrl: String?, url: String?, publishedAt: String?) {
+         self.author = author
+         self.title = title
+         self.desription = description
+         self.imageUrl = imageUrl
+         self.url = url
+         self.publishedAt = publishedAt
+     }
     
 }
 func getData (handler : @escaping ([NewsModel])-> Void){

@@ -7,5 +7,5 @@ target 'newsSwiftApp' do
 
   # Pods for newsSwiftApp
 pod 'SDWebImage', '~> 4.0'
-
+pod 'ReachabilitySwift'
 end
